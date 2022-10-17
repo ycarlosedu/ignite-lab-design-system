@@ -12,10 +12,10 @@ import './styles/global.css'
 export function SignIn() {
   const [isUserSignedIn, setisUserSignedIn] = useState(false)
 
-  function handleSignIn(event: FormEvent) {
+  async function handleSignIn(event: FormEvent) {
     event.preventDefault()
 
-    axios.post('/sessions', {
+    await axios.post('/sessions', {
       email: 'test@test.com',
       password: '12345678'
     })
