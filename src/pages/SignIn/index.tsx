@@ -7,7 +7,6 @@ import { InputComponent } from '../../Components/Input'
 import { Text } from '../../Components/Text'
 import { Logo } from '../../Logo'
 import axios from 'axios'
-import './styles/global.css'
 
 export function SignIn() {
   const [isUserSignedIn, setisUserSignedIn] = useState(false)
